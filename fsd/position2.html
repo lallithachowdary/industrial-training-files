@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 400px;
+            width: 300px;
+            border: 2px solid black;
+            float: left;
+            padding: 5px;
+        }
+        .b{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            float: left;
+            padding: 5px;
+        }
+        .c{
+            height: 364px;
+            width: 245px;
+            border: 1px solid black;
+            margin: 20px;
+            position: relative;
+        }
+        .c1{
+            height: 264px;
+            width: 245px;
+            border: 1px solid black;
+            margin: 20px;
+            position: relative;
+            /*overflow-x: auto;
+            overflow-y: auto;*/
+            overflow: auto;
+        }
+        .c2{
+            height: 264px;
+            width: 245px;
+            border: 1px solid black;
+            margin: 20px;
+            position: relative;
+            overflow-x: scroll;
+            overflow-y: auto;
+        }
+        .d{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(75, 194, 234);
+            border: 1px solid black;
+        }
+        .d1{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(75, 194, 234);
+            border: 1px solid black;
+            float: left;
+        }
+        .e{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(37, 215, 37);
+            border: 1px solid black;
+            position: static;
+        }
+        .f{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(37, 215, 37);
+            border: 1px solid black;
+            position: relative;
+            top: 15px;
+            left: 15px;
+        }
+        .g{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(37, 215, 37);
+            border: 1px solid black;
+            position: absolute;
+            top: 122px;
+            left: 123px;
+        }
+        .h{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(37, 215, 37);
+            border: 1px solid black;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+        .i{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(37, 215, 37);
+            border: 1px solid black;
+            position: sticky;
+            top: 15px;
+            left: 0px;
+        }
+        .j{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(37, 215, 37);
+            border: 1px solid black;
+            position: sticky;
+            left: 0px;
+            bottom: 15px;
+        }
+        .k{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(37, 215, 37);
+            border: 1px solid black;
+            position: sticky;
+            left: 15px;
+            top: 0px;
+        }
+        .l{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(22, 235, 90);
+            border: 1px solid black;
+            position: sticky;
+            top: 0px;
+            right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">position: static
+        <div class="c">
+            <div class="d"></div>
+            <div class="e"><center><br><br>static</center></div>
+            <div class="d"></div>
+        </div>
+    </div>
+    <div class="a">position: relative
+        <div class="c">
+            <div class="d"></div>
+            <div class="f"><center><br><br>relative</center></div>
+            <div class="d"></div>
+        </div>
+    </div>
+    <div class="a">position: absolute
+        <div class="c">
+            <div class="d"></div>
+            <div class="g"><center><br><br>absolute</center></div>
+            <div class="d"></div>
+        </div>
+    </div>
+    <div class="a">position: fixed
+        <div class="c">
+            <div class="d"></div>
+            <div class="h"><center><br><br>fixed</center></div>
+            <div class="d"></div>
+        </div>
+    </div>
+    <div class="b">position: sticky(top)
+        <div class="c1">
+            <div class="i"><center><br><br>sticky(top)</center></div>
+            <div class="d"></div>
+            <div class="d"></div>
+        </div>
+    </div>
+    <div class="b">position: sticky(bottom)
+        <div class="c1">
+            <div class="d"></div>
+            <div class="d"></div>
+            <div class="j"><center><br><br>sticky(bottom)</center></div>
+        </div>
+    </div>
+    <div class="b">position: sticky(left)
+        <div class="c2">
+            <div class="d1"></div>
+            <div class="d1"><center><br><br>sticky(left)</center></div>
+            <div class="k"></div>
+        </div>
+    </div>
+    <div class="b">position: sticky(right)
+        <div class="c2">
+            <div class="d1"></div>
+            <div class="d1"><center><br><br>sticky(right)</center></div>
+            <div class="l"></div>
+        </div>
+    </div>
+</body>
+</html>

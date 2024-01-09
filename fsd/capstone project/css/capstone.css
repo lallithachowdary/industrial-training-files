@@ -1,0 +1,84 @@
+   .a{
+    height:400px;
+    width:400px;
+    background-color: aquamarine;
+    float:medial;
+    position:center;
+    top:0px;
+    left:0px;
+   }
+   .b{
+    height:300px;
+    width:300px;
+    background-color: azure;
+    float:medial;
+    position:relative;
+    top:0px;
+    left:0px;
+   }
+    .b{
+        height: 300px;
+        width: 300px;
+        background-color: pink;
+        float: left;
+        position: relative;  /* we can easily move the position of the division from the original position */
+        top: 50px;
+        left: 20px;
+    }
+    .c{
+        height:300px;
+        width:400px;
+        position:medial;
+        border:5px;/*this project as not be complete we can show this project on tuesday please give this sir*/
+        top: 500px;
+        left:200px;
+     }
+     .d{
+        height:500px;
+        width:200px;
+        position:medial;
+        border:5px;
+        
+     }
+     .parent1{
+        height:200px;
+        width:200px;
+        position:medial;
+        border:5px;
+     }
+
+
+    .parent2{
+        height: 400px;
+        width: 400px;
+        position: relative; /* to apply the absolute property of position for the child then parent position:relative */ 
+        border: 2px double red; /* then only top,left attributes are taken from the parent */
+        float: left;
+    }
+    .c{
+        height: 300px;
+        width: 300px;
+        background-color: rebeccapurple; /* if there is no parent class then the absolute division considers the body as parent division */
+        position: absolute; 
+        top: 30px;
+        left: 50px;
+       
+    }
+
+
+    .d{
+        height: 200px;
+        width: 200px;
+        background-color: green;
+        position: fixed; /* we can fix the position for the division at a certain area  of the website like bottom-right,top-left.... */
+        bottom: 0px; /* the directions must be mentioned for applying this fixed attribute */
+        right:0px
+    }
+    .e{
+        top: 0px;
+        height: 100px;
+        position: sticky; /* we can stick the division when it reaches the condition top=0px */
+        background-color: aqua;
+        bottom:0px;
+        right:0px;
+    }

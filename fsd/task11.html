@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>z-index</title>
+    <center><h1>Z-index in css</h1></center>
+    <style>
+        .a{
+            height:200px;
+            width:200px;
+            background-color: aqua;
+            position: absolute;
+            float:left;
+            z-index:1;
+            top:40px;
+            left:40px;
+        }
+        .b{
+            height:200px;
+            width:200px;
+            background-color:pink;
+            position: relative;
+            float:left;
+            z-index:2;
+            top:40px;
+            left:40px;
+
+        }
+        .c{ height:200px;
+            width:200px;
+            background-color: aqua;
+            position: relative;
+            float:left;
+            z-index:3;
+            top:40px;
+            left:40px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="c">
+                
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
