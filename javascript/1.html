@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-DateFunctions</title>
+</head>
+<body>
+    <h1>Date Functions in Java Script</h1>
+    <script type="text/javascript">
+        const d = new Date();
+        document.write(d+"<br>")
+        document.write("current year is:"+d.getFullYear()+"<br>")
+        document.write("current Month is:"+(d.getMonth()+1)+"<br>")
+        document.write("current Date is:"+d.getDate()+"<br>")
+        document.write("current Day is:"+d.getDay()+"<br>")
+
+        const weekday=["Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday"]
+        let day=weekday[d.getDay()];
+        document.write("Current day is:"+day+"<br>")
+
+        document.write("current Hour is:"+d.getHours()+"<br>")
+        document.write("current Minute is:"+d.getMinutes()+"<br>")
+        document.write("current Second is:"+d.getSeconds()+"<br>")
+
+    </script>
+</body>
+</html>

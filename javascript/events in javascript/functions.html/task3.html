@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family:Arial,sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Find Name</h2>
+    <label>Enter Email:</label>
+    <input type="text" id="input">
+    <button onclick=>Find Email</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+        function findEmail() {
+            //const names=["a", "b" , "c" ,"d" , "e"];
+            const Email=["chanti@gmail.com", "malli@gmail.com" , "deepu@gmail.com" ,"vinod@gmail.com" , "sai@gmail.com"];
+            //sample name  array
+            const input = document.getElementById("input").value;
+            const find = Email.find(Email => Email === input);
+            if (find !== undefined) {
+                document.getElementById("result").innerText = "Email already excited";
+            }else{
+                document.getElementById("result").innerText = "Email don't excited";
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>

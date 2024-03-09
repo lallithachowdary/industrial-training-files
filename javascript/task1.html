@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+</head>
+<body>
+    <h1>Original Colleges</h1>
+    <ul>
+        <li >AEC</li>
+        <li >ACOT</li>
+        <li >ACET</li>
+    </ul>
+    <h1>Changed Colleges</h1>
+    <ul>
+        <li style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" >AEC</li>
+        <li >ACOT</li>
+        <li >ACET</li>
+    </ul>
+    
+    <script>
+        //by using tagname
+        const a=document.getElementsByTagName('li')
+        console.log(a)
+        a[3].innerHTML='Aditya Engineering College'
+        a[4].innerHTML='Aditya  College of Engineering & Technology'
+        a[5].innerHTML='Aditya College of Engineering'
+        a[3].style.fontWeight="bold"
+        a[4].style.fontWeight="bold"
+        a[5].style.fontWeight="bold"
+        a[3].style.backgroundColor="brown"
+        a[4].style.border="2px solid red"
+        //a[5].style.fontStyle="italic"
+       // a[5].style.fontFamily=" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"
+        a[5].style.fontFamily="cursive"
+
+
+
+
+    </script>
+</body>
+</html>

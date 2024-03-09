@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h2>array function using the javascript</h2>
+<body>
+    <script>
+        let nums=[7,90,8];
+        // nums.reduce(function(acc,ele,i,arr) {
+
+        let sum = nums.reduce(function(acc,arr) {
+            return acc + ele
+        },0);
+        //first iteration acc=0,ele=7 =>0+7 =7
+        //second iteration acc=7,ele=90 => 7+90=97       
+        //third iteration acc=97,ele=8 => 97+8=105
+        console.log(sum);
+        console.log(ele);
+        let maximum_value = nums.reduce(function(acc,ele,i,arr) {
+            if(acc > ele){
+                return acc
+            }else{
+                return ele
+        }
+    },nums[0]);
+    //
+
+
+        
+
+    </script>
+</body>
+</html>

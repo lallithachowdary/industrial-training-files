@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard_Events</title>
+</head>
+<body>
+    <h1><center>Keyboard_Events</center></h1>
+    <hr>
+    <p id="a"></p>
+    Keydown:<input type="text" name="" onkeydown="get(this.value)">;
+    Keyup:<input type="text" name="" onkeydown="get(this.value)">;
+    Keypress:<input type="text" name="" onkeydown="get(this.value)">;
+    <script>
+        function get(value)
+        {
+            document.getElementById("a").innerText=value;
+        }
+    </script>
+    
+    
+</body>
+</html>

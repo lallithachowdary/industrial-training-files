@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Methods in JS</title>
+</head>
+<body>
+    <a href="">Click Me</a>
+    <h1 id="e_id">Heading</h1>
+    <p>Aditya</p>
+    <h2>Hey</h2>
+    <p class="p">All</p>
+    <p class="p">Good morning</p>
+    <p class="b">Paragraph</p>
+    <p id="heads">Paragraph</p>
+    <p id="heads">Paragraph</p>
+    <script>
+        //eventlistner
+        const MyBtn=document.getElementById('btn_id');
+        MyBtn.addEventListener("mouseover",MyFunc1)
+        MyBtn.addEventListener("mouseover",MyFunc2)
+        MyBtn.addEventListener("click",MyFunc3)
+         
+        function MyFunc1(){
+            NewDiv.style.backgroundColor="green"
+        }
+        function MyFunc2(){
+            bdy.style.backgroundColor="skyblue"
+        }
+        function MyFuc3(){
+
+        }
+        //date
+        document.getElementById("myBtn").addEventListener("click", displayDate);
+
+       function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+     }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<Input type="text" name="" id="name_id"-->
+        <button id="btn_id">Clich on this button</button>
+        <!--2nd way (By using event properties in js)-->
+        <script type="text/javascript">
+            let btn=document.getElementById('btn_id');
+            //normal function calling
+            btn.addEventListener('click',sample);
+            function sample(){
+                document.body.style.backgroundColor='lightgreen';
+            }
+            //anonynous function calling
+           // btn.addEventListener('dbclick')
+        </script>
+    
+</body>
+</html>

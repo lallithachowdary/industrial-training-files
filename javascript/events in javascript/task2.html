@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn_id">Click on this button</button>
+    <!--2nd way (By using event properties in js)-->
+    <script type="text/javascript">
+        let btn=document.getElementById('btn_id');
+        //1.normal function calling
+        btn.onclick=change;
+        function change(){;
+        document.body.style.backgroundColor='lightblue'
+        }
+        //2.anonynous function calling
+       // btn.onclick=function(){
+          //  document.body.style.backgroundColor='lightblue'
+     //   }
+    </script>
+    
+</body>
+</html>

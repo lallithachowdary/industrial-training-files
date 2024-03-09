@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findEvenOddSum(array) {
+            let evenSum = 0;
+            let oddSum = 0;
+            for(let i = 0; i < array.lengthl; i++) {
+                if(array[i] % 2 === 0){
+                    evenSum += array[i];
+                } else {
+                    oddSum += array[i];
+                }
+            }
+            return { evenSum, oddSum };
+        }
+        //Example usage
+        const number = [1,2,3,4,5,6,7,8,9,10];
+        const rresult = fingEventOddSum(numbers);
+        console.log("Even numbers sum:" , result.evenSum);
+        console.log("Odd numbers sum:", result.oddSum);
+    </script>
+</body>
+</html>

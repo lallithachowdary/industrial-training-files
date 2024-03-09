@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myform">
+        <label>Enter Name</label>
+        <input type="text" id="fn" name="fname" onchange="changeText()">
+        <br>
+        <label>Select Colleges</label>
+        <select style="width:300px;height:30px" onchage=sampletext.('value')>
+            <option>--select College---</option>
+            <option value="AEC">AEC</option>
+            <option value="ACET">ACET</option>
+            <option value="ACOE">ACOE</option>
+        </select>
+        <p id="p_id"></p>
+        <input type="button" onclick="submitform()" value="submit">
+        <input type="reset" onclick="resetform()" value="reset">
+    </form>
+    <script>
+        function submitform(){
+            document.getElementById('myForm').submit()
+            
+        }
+        function resetform(){
+            document.getElementById('myForm').reset()
+        }
+        function changeText(){
+            const chText=document.getElementById('fn');
+            fn.value = fn.value.toUpperCase();
+        }
+        function sample(clg_name){
+            document.getElementById('p_id').innerText = clg_name
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+<body>
+    Enter name:<input type="text" name="" onkeyup="get(this.value)">
+    <p id="a"></p>
+    <script>
+        function get(value){
+            if(value.length<3){
+                document.getElementById("a").innerText="please enter more than 3 characters";
+                document.getElementById("a").style.color="red"
+            }
+            else{
+                document.getElementById("a").innerText=''
+            }
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array2</title>
+</head>
+    <h2>Array Methods</h2>
+    <p>This method is a map function</p>
+<body>
+    <script>
+        const displayYearAndAge = () => {
+        const currentYear = new Date().getFullYear();
+        const birthYear = [1990,1992,2005,2011] // Change this to the birth year you want to calculate the age for
+         const age = currentYear - birthYear;
+
+         const yearAndAge = [currentYear, age];
+
+         const labels = ['Current Year', 'Age'];
+
+         yearAndAge.map((value, index) => {
+        console.log(`${labels[index]}: ${value}`);
+  });
+};
+
+displayYearAndAge();
+
+
+          
+
+    </script>
+</body>
+</html>

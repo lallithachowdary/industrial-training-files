@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Find Name</h2>
+    <label for="nameInput">Enter Name:</label>
+    <input type="text" id="nameInput">
+    <button onclick="findName()">Find Name</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+        function findName() {
+            //const names=["a", "b" , "c" ,"d" , "e"];
+            const names=["chanti", "malli" , "deepu" ,"vinod" , "sai"];
+            //sample name  array
+            const nameInput = document.getElementById("nameInput").value;
+            const foundName = names.find(name => name === nameInput);
+            if (foundName !== undefined) {
+                document.getElementById("result").innerText = foundName;
+            }else{
+                document.getElementById("result").innerText = "undefined";
+            }
+        }
+    </script>
+    
+</body>
+</html>

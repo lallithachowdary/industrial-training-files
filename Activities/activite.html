@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let str = 'Hello world';
+        let str1= 'Good morning';
+        let str2='    welcome to our page    '
+        let num=12345
+        let ary=['Mango','banana']
+
+        //function
+        function strmethods(str_name){
+            document.write('<b>'+str_name+'</b><br>');
+        }
+
+        //.substr()
+        strmethods('substr of string = '+str.substr(1,7));
+
+        //.substring()
+        strmethods('substring of string = '+str.substring(6,11));
+
+        //.replace()
+        strmethods('replace of string = '+str.replace('Morning','Afternoon'));
+
+        //.search()
+        strmethods('Search = '+str.search('g'));
+
+        //.toLocaleLowerCase()
+        strmethods('Lowercase of string = '+str.toLocaleLowerCase());
+
+        //.toLocaleUpperCase()
+        strmethods('Uppercase of string = '+str.toLocaleUpperCase());
+
+        //.index()
+        strmethods('Index of  = '+str.indexOf('g'));
+
+        //.includes()
+        strmethods('includes of string = '+str.includes('morning'));
+
+        //.slice()
+        strmethods('slice of string = '+str.slice(6,10));
+        strmethods('slice of string using negative index = '+str.slice(-4,-2));
+
+        //.concat()
+        strmethods('concatenation of string = '+str.concat(str1));
+
+        //.lastIndexOf()
+        strmethods('Last Index of  = '+str1.lastIndexOf('e'));
+
+        //.charChodeAt()
+        strmethods('charCodeAt  = '+str.charCodeAt('m'));
+
+        //.trim()
+        strmethods('trim of string = '+str2.trim());
+
+        //.charAt()
+        strmethods('Char At  = '+str.charAt(2));
+
+        //.valueOf()
+        strmethods('valueOf  = '+ary.valueOf());
+
+        //.split()
+        console.log(str.split(""));
+        let newstr = 'uday&kiran&kumar';
+        console.log(newstr.split("&"));
+
+        //.toString()
+        strmethods('convert array to str  = '+ary.toString(ary));
+
+        //.match()  
+        strmethods('match  = '+str.match("hello"));       
+    </script>
+</body>
+</html>

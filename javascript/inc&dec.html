@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment and Decrement</title>
+</head>
+<body>
+
+<h2>Increment and Decrement</h2>
+<button onclick="increment()">Increment</button>
+<span id="counter">0</span>
+<button onclick="decrement()">Decrement</button>
+
+<script>
+    let counterValue = 0;
+    const counterElement = document.getElementById('counter');
+
+    function increment() {
+        counterElement.textContent = ++counterValue;
+    }
+
+    function decrement() {
+        if (counterValue > 0) {
+            counterElement.textContent = --counterValue;
+        }
+    }
+</script>
+
+</body>
+</html>

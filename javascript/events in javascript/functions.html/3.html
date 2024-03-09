@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2html</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    <button onclick="funname()">Click Here</button><br>
+    EnterName:<input type="text" id="name"><br>
+    <button onclick="getname(document.getElementById('name').value)">Click</button><br>
+    <span id="n"></span>
+    <script>
+        //function with no parameters
+        // funname();
+        function funname(){
+            document.write("Hello")
+        }
+        //function with parameter
+        function getname(x){
+            const a=document.getElementById("n").innerText=x;
+        }
+        //function with no arrguments
+       // function add(a=1,b=3){
+           // console.log(a+b)
+            //document.write(a+b)
+      //  }
+           //Arrow(=>)function
+       const add=(a,b,c)=>{
+        console.log(a+b)
+        document.write(a+b)
+       // console.log(typeof(output))
+       }
+       concat("hari","kiran")
+       add(1,2)//type number
+       add(true,true)//type number
+       add(falue,true)//
+       add(true,'truefalse')//
+       add(false,"true")//
+       add(10,10,10)//
+       add(10,"10",10)//
+       add(10,true,10)//
+       add(10,true,"10")//
+       //10+10+10=
+       setTimeout(test,3000)
+       function test(){
+        document.write("after 3 seconds")
+       }
+    </script>
+</body>
+</html>

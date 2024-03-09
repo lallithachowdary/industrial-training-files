@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to print sample text after a delay
+        function printDelayedText(text, callback) {
+        setTimeout(function() {
+        console.log(text);
+        callback(); // Invoke the callback function
+    }, 5000); // 5000 milliseconds = 5 seconds
+}
+
+// Callback function to be executed after the text is printed
+function afterDelay() {
+    console.log("Text printed after 5 seconds.");
+}
+
+// Call the function with the sample text and the callback function
+printDelayedText("Sample text delayed after 5 seconds.", afterDelay);
+
+
+
+    </script>
+</body>
+</html>

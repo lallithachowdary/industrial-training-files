@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <body>
+    <h2>Arrow function and anonymous function</h2>
+    <p>tthis method will not create any new array and return it after</p>
+</body>
+    <script>
+        //syntax of foreach()
+        //arr.forEach(function funname(currentEle,index,arr)){
+        //{(
+
+       // )};
+       //Annonymous function
+       //let salaries = [4000,2500,1000];
+       //console.log(salaries);
+       //salaries.forEach((amount,index)=>{
+        //var hike = amount/10;
+        //console.log(hike)
+        //salaries[index] = amount + hike;
+       //});
+       //console.log(salaries);
+       
+       //Arrow functions
+      // Define an array of salaries
+    const salaries = [30000, 40000, 50000, 60000];
+
+    // Define an arrow function to calculate total salary
+    const totalSalary = (salaries) => {
+    let total = 0;
+    salaries.forEach(salary => {
+    total += salary;
+  });
+    return total;
+};
+
+    // Call the function and store the result
+    const total = totalSalary(salaries);
+
+    // Output the result
+    console.log("Total salary:", total);
+
+
+
+        
+
+
+        
+
+            </script>
+
+</html>

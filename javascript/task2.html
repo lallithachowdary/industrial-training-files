@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Methods in JS</title>
+</head>
+<body>
+    <a href="">Click Me</a>
+    <h1 id="e_id">Heading</h1>
+    <p>Aditya</p>
+    <h2>Hey</h2>
+    <p class="p">All</p>
+    <p class="p">Good morning</p>
+    <p class="b">Paragraph</p>
+    <p id="heads">Paragraph</p>
+    <p id="heads">Paragraph</p>
+    <script>
+        //To print entire document structure
+        // console.log(document)
+        // console.log(document.head)
+        // console.log(document.body)
+        //by using id
+        const Byid=document.getElementById('e_id');
+        Byid.style.color='blue'
+        Byid.style.fontSize='60px'
+        console.log(Byid)
+        
+        //by using class name
+        const ClsId = document.getElementsByClassName('p')
+        console.log(ClsId)
+        ClsId[1].style.color="Blue";
+        
+
+
+        //by using Tag name
+        const Tag=document.getElementsByTagName('h2')
+        console.log(Tag)
+        Tag[0].style.color="green";
+        
+    
+        //query selector ('#id,class,tag')
+            const qs =document.querySelector('p')
+            qs.style.backgroundColor="red";//first one only Applicable
+            document.querySelector("p").style.backgroundColor="pink"
+            document.querySelector("h2").style.backgroundColor="red" 
+        //by using id
+           let head=document.querySelectorAll("#heads");//all are applicable
+           console.log(heads)
+           head[0].style.backgroundColor="pink";
+           head[1].style.backgroundColor="pink";
+
+    </script>
+    
+         
+
+          
+</body>
+</html>

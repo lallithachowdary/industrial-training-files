@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fibonacciSequence(n) {
+        let fib = [0, 1];
+    
+        for (let i = 2; i < n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+        if (fib[i] > n) break; // Stop when Fibonacci number exceeds the given limit
+    }
+    
+        return fib.slice(0, -1); // Exclude the last Fibonacci number if it exceeds the limit
+}
+
+        function displayFibonacciSequence(n) {
+        const sequence = fibonacciSequence(n);
+        console.log("Fibonacci sequence up to", n, ":", sequence);
+}
+
+        // Example usage
+        displayFibonacciSequence(50); // Change the number to whatever limit you want
+
+    </script>
+</body>
+</html>

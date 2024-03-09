@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array functions</title>
+</head>
+<body>
+    <h2>Array elements</h2>
+    <ul>
+        <li>push</li>
+        <li>pop</li>
+        <li>shift</li>
+        <li>unshift</li>
+        <li>concat</li>
+        <li>slice</li>
+        <li>splice</li>
+        <li>indexof</li>
+        <li>sort</li>
+    </ul>
+    <script>
+
+       // Define an array of numbers
+        let numbers = [1, 2, 3, 4, 5];
+
+        // Array method: push() - Adds elements to the end of an array
+        numbers.push(6);
+        console.log("After push(6):", numbers); // Output: [1, 2, 3, 4, 5, 6]
+
+        // Array method: pop() - Removes the last element from an array and returns it
+        let poppedElement = numbers.pop();
+        console.log("Popped element:", poppedElement); // Output: 6
+        console.log("After pop():", numbers); // Output: [1, 2, 3, 4, 5]
+
+        // Array method: unshift() - Adds elements to the beginning of an array
+        numbers.unshift(0);
+        console.log("After unshift(0):", numbers); // Output: [0, 1, 2, 3, 4, 5]
+
+        // Array method: shift() - Removes the first element from an array and returns it
+        let shiftedElement = numbers.shift();
+        console.log("Shifted element:", shiftedElement); // Output: 0
+        console.log("After shift():", numbers); // Output: [1, 2, 3, 4, 5]
+
+        // Array method: indexOf() - Returns the index of the first occurrence of a specified value in an array
+        let index = numbers.indexOf(3);
+        console.log("Index of 3:", index); // Output: 2
+
+        // Array method: slice() - Returns a shallow copy of a portion of an array into a new array object
+        let slicedArray = numbers.slice(1, 4); // Start index inclusive, end index exclusive
+        console.log("Sliced array:", slicedArray); // Output: [2, 3, 4]
+
+        // Array method: splice() - Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place
+        numbers.splice(1, 2, 'a', 'b', 'c');
+        console.log("After splice():", numbers); // Output: [1, 'a', 'b', 'c', 4, 5]
+
+        // Array method: forEach() - Calls a function for each element in the array
+        numbers.forEach(function(element) {
+        console.log(element);
+    });
+
+        // Array method: map() - Creates a new array populated with the results of calling a provided function on every element in the calling array
+        let mappedArray = numbers.map(function(element) {
+        return element * 2;
+    });
+        console.log("Mapped array:", mappedArray); // Output: [2, NaN, NaN, NaN, 8, 10]
+
+    </script>
+</body>
+</html>

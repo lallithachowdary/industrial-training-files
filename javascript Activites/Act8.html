@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPalindrome(num) {
+        // Convert number to string
+        let numStr = num.toString();
+    
+        // Compare characters from both ends of the string
+        for (let i = 0; i < numStr.length / 2; i++) {
+        if (numStr[i] !== numStr[numStr.length - 1 - i]) {
+        return false; // Not a palindrome
+        }
+    }
+        return true; // Palindrome
+}
+
+        // Test the function
+        let number = 12321; // Change this to test different numbers
+        if (isPalindrome(number)) {
+        console.log(number + " is a palindrome.");
+        } else {
+        console.log(number + " is not a palindrome.");
+}
+
+    </script>
+    
+</body>
+</html>
